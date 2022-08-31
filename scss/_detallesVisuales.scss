@@ -1,0 +1,76 @@
+//Sombra a las imagenes
+.areaPrincial__imagenChica,
+.areaPrincipal__imagenGrande,
+.imagenEstatica,
+.imagenAbout,
+.imagenContact {
+    box-shadow: 0 0 45px $dark-slate-blue;
+}
+//Ajustar bien el objet-fit.
+.imagenEstatica {
+    object-fit: unset;
+}
+//Activamos pagina abierta.
+.activo {
+    background-color: $china-pink;
+    border-radius: 5px;
+    box-shadow: 0 0 25px $china-pink;
+}
+
+//Footer
+.footer {
+	z-index: 0;
+}
+.stroke {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #111827;
+	color: transparent;
+}
+.halftone {
+	position: relative;
+	&:after {
+		content: "Gabo...";
+		font-size: 1em;
+		letter-spacing: 6px;
+		left: calc(50% + 6px);
+		position: absolute;
+		top: calc(50% + 6px);
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		-webkit-text-stroke-width: 0;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+.halftone-color {
+	&:after {
+		z-index: -1;
+		background-color: #e072a4ff;
+	}
+}
+.hechoPor {
+	p {
+		font-size: 2em;
+		font-weight: bold;
+		letter-spacing: 5px;
+		margin: 0;
+	}
+}
+
+/* Texto sobre imagen */
+/* Agrego texto sobre las imagenes solamente en el index. De lo contrario me da la impresion de uqe todo el sitio esta sobrecargandoce. */ 
+.imagenContenedor{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.textoCentrado {
+	background-color: rgba($color: $cultured, $alpha: .2);
+	position: absolute;
+	top: 20%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}

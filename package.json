@@ -1,0 +1,13 @@
+{
+  "name": "birds-from-argentina---barrionuevo-gabriel",
+  "version": "1.0.0",
+  "description": "Birds from Argentina es un sitio dedicado a las aves argentinas. El mismo intenta dar un simple resumen de la gran variedad de especies dentro del país, usando para ellos una considerable cantidad de imagenes."
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Gabriel Barrionuevo",
+  "license": "ISC"
+}

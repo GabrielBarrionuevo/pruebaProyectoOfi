@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <title>Contact Us - BfA</title>
+    <meta name="description" content="Birds from Argentina es un sitio dedicado a las aves argentinas. En este sitio encontrarás la forma de comunicarte con nosotros, así como el medio para dejarnos tu opinión.">
+    <meta name="keywords" content="birds, Argentina, aves, pajaros, ejemplos, formulario, contacto, opinion, recomendaciones, preferida, datos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a Wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fuentes  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- -------  -->
+</head>
+<body class="barra">
+    <!-- Encabezado -->
+    <header class="header">
+        <!-- Menu de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand tituloPrincipal" href="../index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active tituloInicio" aria-current="page" href="../index.html"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle tituloCaracteristicas" href="caracteristicas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="caracteristicas.html#miradas">Miradas</a></li>
+                                <li><a class="dropdown-item" href="caracteristicas.html#plumas">Plumas</a></li>
+                                <li><a class="dropdown-item" href="caracteristicas.html#picos">Picos</a></li>
+                                <li><a class="dropdown-item" href="caracteristicas.html#nidos">Nidos</a></li>
+                                <li><a class="dropdown-item" href="caracteristicas.html#patas">Patas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle tituloCategorias" href="categorias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="categorias.html#NorteArgentino">Norte Argentino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html#CentroArgentino">Centro Argentino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html#SurArgentino">Sur Argentino</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tituloAbout" href="about.html"></a>
+                        </li>
+                        <li class="nav-item activo">
+                            <a class="nav-link tituloContact" href="contactMe.html"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main class="main">
+        <!-- Area de bienvenida -->
+        <section class="areaEncabezado bg_animate">
+            <h1 class="areaEncabezado__titulo encabezadoAparecer">Contact us!</h1>
+            <p class="areaEncabezado__texto encabezadoAparecer">Estamos dispuestos a transmitirte lo que sabemos. Ese conocimiento encierra una de las claves del misterio. Eso sí, para introducirse en el santuario de la naturaleza deberemos guardar ciertas reglas. La del silencio es una. Comportarnos como en cualquier templo, aunque tus preguntas, y sus respuestas, serán las únicas voces que las aves aceptarán de buen grado; con un guiño en sus ojillos pícaros. Porque se divierten con el intento humano de conocerlas.</p>
+
+            <!-- Animacion burbujas -->
+            <div class="burbujas">
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+            </div>
+        </section>
+
+        <h2 class="areaPrincipal__titulo">Formulario</h2>
+
+        <div class="divContact 
+        px-1 overflow-hidde
+        mt-3">
+            <div class="row">
+                <div class=" 
+                    col-lg-8 
+                    col-md-11 
+                    col-sm-12 
+                    col-xs-12">
+                    <form>
+                        <!-- Titulo principal del formulario -->
+                        <legend>Ingresa tus datos</legend>
+
+                        <!-- Datos personales  -->
+                        <div>
+                            <div class="mb-3">
+                                <label for="exampleInputNombre" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="nombreHelp">
+                                <div id="nombreHelp" class="form-text">We'll never share your name with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputTel" class="form-label">Celular</label>
+                                <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp">
+                                <div id="telHelp" class="form-text">We'll never share your tel with anyone else.</div>
+                            </div>
+                        </div>
+
+                        <!-- Opciones de aves -->
+                        <label for="exampleInputAves" class="form-label">Ave preferida</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccionar</option>
+                            <option value="1">Ave 1</option>
+                            <option value="2">Ave 2</option>
+                            <option value="3">Ave 3</option>
+                            <option value="4">Ave 4</option>
+                            <option value="5">Ave 5</option>
+                            <option value="6">Ave 6</option>
+                        </select>
+
+                        <!-- Textarea -->
+                        <label for="exampleInputTextarea" class="form-label mt-3">Quieres dejar un comentario?</label>
+                        <div class="form-floating">
+                            <textarea class="form-control areaTexto h-100 d-inline-block" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea" class="b-1">Si lo deseas, podés dejar tu comentario...</label>
+                        </div>
+
+                        <!-- Pregunta y botones -->
+                        <label for="exampleInputCheck" class="form-label mt-3">Te ha gustado este sitio?</label>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                No
+                            </label>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-primary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="
+                    col-lg-4
+                    col-md-11 
+                    col-sm-12 
+                    col-xs-12">
+                    <img src="../img/Contact me - 01.jpg" alt="Yetapá Acollarado" title="Yetapá Acollarado" class="wow animate__animated animate__backInRight imagenContact">
+                </div>
+            </div>
+        </div>
+        <div class="divContact 
+        px-1 overflow-hidde">
+            <div class="row">
+                <div class="
+                    col-lg-6
+                    col-md-11
+                    col-sm-12 
+                    col-xs-12
+                    mb-4">
+                    <img src="../img/Contact me - 02.jpg" alt="Gorriones" title="Gorriones" class="wow animate__animated animate__backInLeft imagenContact">
+                </div>
+                <div class="
+                    col-lg-6
+                    col-md-11 
+                    col-sm-12 
+                    col-xs-12">
+                    <img src="../img/Contact me - 03.jpg" alt="Zampullín Tobiano" title="Zampullín Tobiano" class="wow animate__animated animate__backInRight imagenContact">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="enlacesRedesSociales">
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.facebook.com.ar" target="_blank"><img src="../ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.instagram.com" target="_blank"><img src="../ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="../ico/twitter.png" alt="" class="enlacesRedesSociales__items--imagen" id="twitter">
+                </a>
+            </li>
+        </ul>
+        <div class="hechoPor">
+            <p class="stroke halftone halftone-color">Gabo...</p>
+        </div>
+    </footer>
+
+    <!-- Agregamos JS para utilizar Wow -->
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Agregamos script JS para bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

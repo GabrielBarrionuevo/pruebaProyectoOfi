@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <title>Home - BfA</title>
+    <meta name="description" content="Birds from Argentina es un sitio dedicado a las aves argentinas. El mismo intenta dar un simple resumen de la gran variedad de especies dentro del país, usando para ellos una considerable cantidad de imagenes.">
+    <meta name="keywords" content="birds, Argentina, aves, pajaros, ejemplos">
+    <!--  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a Wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- -------  -->
+</head>
+<body class="barra">
+    <!-- Encabezado -->
+    <header class="header">
+        <!-- Menu de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand tituloPrincipal" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mb-2 mb-lg-0">
+                        <li class="nav-item activo">
+                            <a class="nav-link active tituloInicio" aria-current="page" href="index.html"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle tituloCaracteristicas" href="#" button data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/caracteristicas.html#miradas">Miradas</a></li>
+                                <li><a class="dropdown-item" href="pages/caracteristicas.html#plumas">Plumas</a></li>
+                                <li><a class="dropdown-item" href="pages/caracteristicas.html#picos">Picos</a></li>
+                                <li><a class="dropdown-item" href="pages/caracteristicas.html#nidos">Nidos</a></li>
+                                <li><a class="dropdown-item" href="pages/caracteristicas.html#patas">Patas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle tituloCategorias" href="pages/categorias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/categorias.html#NorteArgentino">Norte Argentino</a></li>
+                                <li><a class="dropdown-item" href="pages/categorias.html#CentroArgentino">Centro Argentino</a></li>
+                                <li><a class="dropdown-item" href="pages/categorias.html#SurArgentino">Sur Argentino</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tituloAbout" href="pages/about.html"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tituloContact" href="pages/contactMe.html"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main class="main">
+        <!-- Area de bienvenida -->
+        <section class="areaEncabezado bg_animate">
+            <h1 class="areaEncabezado__titulo encabezadoAparecer">Bienvenido!</h1>
+            <p class="areaEncabezado__texto encabezadoAparecer">Este sitio está creado con la intensión de fomentar la gran diversidad de aves presentes en la argentina. Toma prestada imagenes y textos del libro "Manual del observador de aves" de los autores Andrés Bosso y Tito Narosky. Quisiera comenzar el recorrido por este sitio sitando a Andres Bosso: "[...] Imagino un escenario en el que vayamos creciendo progresivamente y que en los próximos 20 años dupliquemos el porcentaje protegido. Y apostemos también, como estrategia nacional en una sociedad cada vez más urbana, a que los dos mil municipios de la Argentina tengan su reserva natural. para mejorar la calidad de vida en nuestras ciudades y para aprender desde pequeños a retomar nuestro vínculo con la naturaleza."</p>
+
+            <!-- Animacion burbujas -->
+            <div class="burbujas">
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+            </div>
+        </section>
+
+        <!-- Inicio -->
+        <section class="areaPrincipal">
+            <h2 class="areaPrincipal__titulo">Inicio</h2>
+
+            <div class="grid-contenedor">
+                <div class="grid-item elementoGrande1 imagenContenedor">
+                    <img src="img/Index-tacuarita.jpg" alt="Tacuarita Lorem" title="Tacuarita Lorem " class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente01">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Tacuarita</div>
+                </div>
+                <div class="grid-item elementoChico1 imagenContenedor">
+                    <img src="img/Index-picaflorEsperalda.jpg" alt="Picaflor Esmeralda" title="Picaflor Esmeralda" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Picaflor Esmeralda</div>
+                </div>
+                <div class="grid-item elementoChico2 imagenContenedor">
+                    <img src="img/Index-martinPescador.jpg" alt="Martin Pescador" title="Martin Pescador" class="areaPrincipal__imagenGrande imagenAreaPrincipal wow animate__animated animate__backInLeft" id="imagenCentradaManualmente02">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Martin Pescador</div>
+                </div>
+                <div class="grid-item elementoGrande2 imagenContenedor">
+                    <img src="img/Index-cabures.jpg" alt="Cabures" title="Cabures" class="areaPrincial__imagenChica imagenAreaPrincipal wow animate__animated animate__backInRight">
+                    <div class="textoCentrado wow animate__animated animate__fadeIn">Cabures</div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="enlacesRedesSociales">
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.facebook.com.ar" target="_blank"><img src="ico/facebook.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="ico/twitter.png" alt="" class="enlacesRedesSociales__items--imagen" id="twitter">
+                </a>
+            </li>
+            <li class="enlacesRedesSociales__items wow animate__animated animate__bounceIn">
+                <a href="https://www.instagram.com" target="_blank"><img src="ico/instagram.png" alt="" class="enlacesRedesSociales__items--imagen"></a>
+            </li>
+        </ul>
+        <div class="hechoPor">
+            <p class="stroke halftone halftone-color">Gabo...</p>
+        </div>
+    </footer>
+
+    <!-- Agregamos JS para utilizar Wow -->
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Agregamos script JS para bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+

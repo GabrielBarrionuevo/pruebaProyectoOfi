@@ -1,0 +1,142 @@
+    /* BODY */
+    .tituloPrincipal:before {
+    content: "Birds from Argentina";
+}
+    /* MENU */
+    .tituloInicio:before {
+        content: "Inicio";
+    }
+    .tituloCaracteristicas:before {
+        content: "Caracacteristicas";
+    }
+    .tituloCategorias:before {
+        content: "Categorias";
+    }
+    .tituloAbout:before {
+        content: "About Us";
+    }
+    .tituloContact:before {
+        content: "Contact Us";
+    }    
+
+/* ========================= */
+/* MEDIA QUERIES */
+/* ========================= */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 1200px){
+    .tituloInicio:before {
+        content: "Inicio";
+    }
+    .tituloCaracteristicas:before {
+        content: "Carac ";
+    }
+    .tituloCategorias:before {
+        content: "Categ ";
+    }
+    .tituloAbout:before {
+        content: "About";
+    }
+    .tituloContact:before {
+        content: "Contact";
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 952px){
+    .areaEncabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .grid-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .enlacesRedesSociales__items--imagen {
+        width: 70px;
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 680px){
+    /* MENU */
+    .divAbout {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-light 
+    .navbar-brand {
+        color: $cultured;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-toggler {
+        margin: auto;
+    } 
+    .container-fluid {
+        margin-top: 4%;
+    }
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+    .hechoPor {
+        margin: 20px;
+    }
+    .enlacesRedesSociales {
+        display: flex;
+        flex-direction: column;
+    }
+    .enlacesRedesSociales__items--imagen {
+        width: 60px;
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 423px){
+    .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+
+
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 340px){
+    .tituloPrincipal:before {
+    content: "BfArg";
+    }
+}
+/* ================================================================ */
+/* ================================================================ */
+

@@ -1,0 +1,21 @@
+/* ***************** */
+/* Paleta de colores */
+/* ***************** */
+$dark-slate-blue: #3d3b8eff;
+$glaucous: #6883baff;
+$cultured: #f9f9f9ff;
+$china-pink: #e072a4ff;
+$granny-smith-apple: #b0e298ff;
+
+// Map y get-map
+$palette: (
+    dark-slate-blue: #3d3b8eff,
+    glaucous: #6883baff,
+    cultured: #f9f9f9ff,
+    china-pink: #e072a4ff,
+    granny-smith-apple: #b0e298ff
+    );
+
+$h1: map-get($palette, cultured);
+$h2: map-get($palette, granny-smith-apple);
+

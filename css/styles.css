@@ -1,0 +1,803 @@
+@charset "UTF-8";
+/* ================================ */
+/* ============Imports============= */
+/* ================================ */
+/* ***************** */
+/* Paleta de colores */
+/* ***************** */
+/* ================================ */
+/* ==============RESET============= */
+/* ================================ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: hsla(333deg, 64%, 66%, 0.1);
+  font-family: "Lobster", cursive;
+  font-family: "Roboto Slab", serif;
+  /* Eliminamos scroll horizontal generado por bootstraps en aboutUs y ContactUs */
+  overflow-x: hidden;
+  /* Agregamos un espacio desde el top para uqe al ingresar al sitio, el menu fijo no nos tape el contenido. */
+  scroll-padding-top: 50px;
+}
+
+#iconoMenu {
+  display: none;
+}
+
+/* ================================ */
+/* ==============GRID============== */
+/* ================================ */
+body {
+  display: grid;
+  grid-template: "encabezado     encabezado" 120px "main           main" 1fr "footer         footer" 250px/1fr 5fr;
+}
+
+.header {
+  grid-area: encabezado;
+}
+
+.main {
+  grid-area: main;
+  /* background-color: green; */
+}
+
+.footer {
+  grid-area: footer;
+  /* background-color: blue; */
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+body,
+.main {
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #f9f9f9;
+}
+
+h2 {
+  color: #b0e298;
+}
+
+/* ================================ */
+/* ==============FLEX============== */
+/* ================================ */
+.header {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+header {
+  background-color: #3d3b8e;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ================================= */
+/*  MENU BOOTSTRAP */
+/* ================================= */
+.bg-light {
+  --bs-bg-opacity: 0;
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: #f9f9f9;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: auto;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+  margin: 2px;
+  border-radius: 5%;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.iconoMenu {
+  width: 40px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item,
+.dropdown-item {
+  text-align: center;
+}
+
+.navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+  border: 4px solid #3d3b8e;
+}
+
+/* ================================ */
+/* ==============GRID============== */
+/* ================================ */
+/* ******************** */
+/* INICIO */
+/* ******************** */
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 550px;
+  gap: 50px;
+}
+
+.elementoGrande1 {
+  grid-column: 1/3;
+}
+
+.elementoGrande2 {
+  grid-column: 2/4;
+}
+
+.elementoChica1 {
+  grid-column: 3/4;
+}
+
+.elementoChica2 {
+  grid-column: 1/2;
+}
+
+.imagenAreaPrincipal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================================ */
+/* ==============FLEX============== */
+/* ================================ */
+.flex-containerInicio {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.hechoPor {
+  flex-grow: 1;
+  width: 200px;
+  margin: 20px;
+}
+
+.enlacesRedesSociales, .areaEncabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.areaEncabezado {
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 10px;
+}
+
+.grid-item {
+  display: flex;
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+main {
+  background-color: #f9f9f9;
+  padding: 0 auto;
+}
+
+.grid-contenedor {
+  margin: 20px;
+}
+
+/* ******************** */
+/* Area Bienvenida */
+/* ******************** */
+/* Posicionamiento */
+.areaEncabezado {
+  background-image: url("../img/Index-encabezado.jpg");
+  background-position: 60% 35%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.areaEncabezado__titulo,
+.areaEncabezado__texto {
+  vertical-align: middle;
+  font-weight: bolder;
+  padding: 10px;
+  box-shadow: 0 0 25px #f9f9f9;
+  text-align: center;
+}
+
+/* Estilo ambas cajas */
+.areaEncabezado__titulo {
+  font-size: 50px;
+}
+
+.areaEncabezado__texto {
+  width: 70%;
+  background-color: rgba(249, 249, 249, 0.2);
+}
+
+/* ******************** */
+/* Area Inicio */
+/* ******************** */
+.areaPrincipal,
+.areaPrincipal__videos {
+  margin: 0 auto;
+  padding: auto 5px;
+}
+
+/* SECTION PRINCIPAL */
+.areaPrincipal__titulo,
+.areaPrincipal__videos--titulo,
+.textoCentrado {
+  box-shadow: 0 0 45px #3d3b8e;
+  width: 150px;
+  font-size: 3em;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.areaPrincipal__titulo,
+.textoCentrado {
+  width: fit-content;
+  margin: 20px;
+  margin-top: 100px;
+  padding: 10px auto;
+  display: inline-block;
+}
+
+.imagenAreaPrincipal {
+  object-fit: fit;
+}
+
+.textoCentrado {
+  color: #3d3b8e;
+  font-size: 3em;
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+footer {
+  background-color: #3d3b8e;
+  width: 100%;
+}
+
+.enlacesRedesSociales, .areaEncabezado {
+  list-style: none;
+  /* Con este le saco el espacio a los enlaces, para centrar mejor el "hecho por Gabo..." */
+  width: 65%;
+  text-align: center;
+}
+
+.enlacesRedesSociales__items {
+  /* margin: 50px 20px; */
+}
+
+.enlacesRedesSociales__items--imagen {
+  width: 40px;
+  filter: invert(100%);
+  margin: 20px;
+}
+
+.hechoPor {
+  vertical-align: middle;
+  color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* ================================= */
+/* Animaciones */
+/* ================================= */
+/* Agregar en un futuro animaciones para imagenes de redes sociales. */
+.grid-item:hover .imagenAreaPrincipal {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition-duration: 0.7s;
+}
+
+.imagenAreaPrincipal {
+  overflow: hidden;
+}
+
+/* ******************** */
+/* ANIMACIONES PLUS */
+/* ******************** */
+/* ******************** */
+/* Barra scroll */
+/* ******************** */
+.barra::-webkit-scrollbar {
+  width: 12px;
+}
+
+.barra::-webkit-scrollbar-thumb {
+  background: #3d3b8e;
+  border-radius: 5px;
+}
+
+/* *************************** */
+/* Burbujas header */
+/* *************************** */
+.bg_animate {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.burbuja {
+  border-radius: 50%;
+  box-shadow: 0 0 15px #f9f9f9;
+  background: #f9f9f9;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -20vh;
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 65%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 80vh;
+  }
+}
+/* ******************************** */
+/* Cambio de color menues del menu. */
+/* ******************************** */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #6883ba;
+  font-weight: bolder;
+  background-color: #f9f9f9;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #f9f9f9;
+  background-color: #6883ba;
+  box-shadow: 0 0 25px #f9f9f9;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #6883ba;
+}
+
+.hechoPor span {
+  cursor: pointer;
+  filter: blur(3px);
+  transition: 0.2s;
+}
+.hechoPor span:hover {
+  filter: blur(0px);
+  transition: 0s;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 0 55px #b0e298;
+}
+
+/* BODY */
+.tituloPrincipal:before {
+  content: "Birds from Argentina";
+}
+
+/* MENU */
+.tituloInicio:before {
+  content: "Inicio";
+}
+
+.tituloCaracteristicas:before {
+  content: "Caracacteristicas";
+}
+
+.tituloCategorias:before {
+  content: "Categorias";
+}
+
+.tituloAbout:before {
+  content: "About Us";
+}
+
+.tituloContact:before {
+  content: "Contact Us";
+}
+
+/* ========================= */
+/* MEDIA QUERIES */
+/* ========================= */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 1200px) {
+  .tituloInicio:before {
+    content: "Inicio";
+  }
+  .tituloCaracteristicas:before {
+    content: "Carac ";
+  }
+  .tituloCategorias:before {
+    content: "Categ ";
+  }
+  .tituloAbout:before {
+    content: "About";
+  }
+  .tituloContact:before {
+    content: "Contact";
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 952px) {
+  .areaEncabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .grid-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .enlacesRedesSociales__items--imagen {
+    width: 70px;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 680px) {
+  /* MENU */
+  .divAbout {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-light .navbar-brand {
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  .navbar-toggler {
+    margin: auto;
+  }
+  .container-fluid {
+    margin-top: 4%;
+  }
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+  }
+  .hechoPor {
+    margin: 20px;
+  }
+  .enlacesRedesSociales, .areaEncabezado {
+    display: flex;
+    flex-direction: column;
+  }
+  .enlacesRedesSociales__items--imagen {
+    width: 60px;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 423px) {
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+@media screen and (max-width: 340px) {
+  .tituloPrincipal:before {
+    content: "BfArg";
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
+/* ***************** */
+/* Paleta de colores */
+/* ***************** */
+body {
+  overflow-x: hidden;
+}
+
+.textAbout {
+  padding: 40px;
+}
+
+.imagenAbout {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.imagenContact {
+  width: 100%;
+  object-fit: cover;
+}
+
+.divAbout,
+.divContact {
+  margin: 20px auto;
+}
+
+.areaPrincipal__videos {
+  padding: auto;
+}
+
+form {
+  padding: 40px;
+}
+
+.areaPrincial__imagenChica,
+.areaPrincipal__imagenGrande,
+.imagenEstatica,
+.imagenAbout,
+.imagenContact {
+  box-shadow: 0 0 45px #3d3b8e;
+}
+
+.imagenEstatica {
+  object-fit: unset;
+}
+
+.activo {
+  background-color: #e072a4;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #e072a4;
+}
+
+.footer {
+  z-index: 0;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #111827;
+  color: transparent;
+}
+
+.halftone {
+  position: relative;
+}
+.halftone:after {
+  content: "Gabo...";
+  font-size: 1em;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  position: absolute;
+  top: calc(50% + 6px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.halftone-color:after {
+  z-index: -1;
+  background-color: #e072a4;
+}
+
+.hechoPor p {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+/* Texto sobre imagen */
+/* Agrego texto sobre las imagenes solamente en el index. De lo contrario me da la impresion de uqe todo el sitio esta sobrecargandoce. */
+.imagenContenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.textoCentrado {
+  background-color: rgba(249, 249, 249, 0.2);
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Posicionamiento */
+.areaEncabezado {
+  background-image: url("../img/Index-encabezado.jpg");
+  background-position: 50% 35%;
+}
+
+/* Consideré utilizar id's y no clases porque el centrado de cada una de ellas depende de la imagen particular y del criterio estétito que uno tiene a la hora de intentar centrar o priorizar una zona de la imagen en concreto. Pienso que no es algo general de todas ellas y no algo automatizado el decir, por ejemplo: "corro a la derecha un 20% todas estas imágenes del index", sino que se ajustó una por una. */
+/* Index 1 y 3 */
+/* Categorias Yunga 1*/
+/* Estepa Patagónica 2 */
+#imagenCentradaManualmente01,
+#imagenCentradaManualmente02,
+#imagenCentradaManualmente05,
+#imagenCentradaManualmente10,
+#imagenCentradaManualmente13 {
+  object-position: 90% 20%;
+}
+
+/* Caracteristicas Miradas2 */
+/* Categorias Bosque Busantartico 2 */
+/* About us 2 */
+#imagenCentradaManualmente03,
+#imagenCentradaManualmente09,
+#imagenCentradaManualmente11 {
+  object-position: 90% 10%;
+}
+
+/* Caracteristicas Picos2 */
+/* Categorias Matorrales del Monte 2*/
+/* Categorias Llanura Bonaerense 1*/
+#imagenCentradaManualmente04,
+#imagenCentradaManualmente06,
+#imagenCentradaManualmente07 {
+  object-position: 20%;
+}
+
+/* Categorias Ribera Platense 2*/
+#imagenCentradaManualmente08 {
+  object-position: 40%;
+}
+
+/* Categorias Chaco 2 */
+#imagenCentradaManualmente12 {
+  object-position: 30%;
+}
+
+/*# sourceMappingURL=styles.css.map */

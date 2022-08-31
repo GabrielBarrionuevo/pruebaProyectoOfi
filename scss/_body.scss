@@ -1,0 +1,59 @@
+/* ================================ */
+/* ==============RESET============= */
+/* ================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: hsla(333, 64%, 66%, 0.1);
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    /* Eliminamos scroll horizontal generado por bootstraps en aboutUs y ContactUs */
+    overflow-x: hidden;
+    /* Agregamos un espacio desde el top para uqe al ingresar al sitio, el menu fijo no nos tape el contenido. */
+    scroll-padding-top: 50px;
+}
+#iconoMenu {
+    display: none;
+}
+
+/* ================================ */
+/* ==============GRID============== */
+/* ================================ */
+body {
+    display: grid;
+    grid-template:
+    "encabezado     encabezado"     120px
+    "main           main"           1fr
+    "footer         footer"         250px /
+    1fr             5fr
+    ;
+}
+.header {
+    grid-area: encabezado;
+    // background-color: rgba(104,131,186,1);
+}
+.main {
+    grid-area: main;
+    /* background-color: green; */
+}
+.footer {
+    grid-area: footer;
+    /* background-color: blue; */
+}
+
+/* ================================ */
+/* ==========BOX MODELIN=========== */
+/* ================================ */
+body, 
+.main {
+    background-color: $cultured;
+}
+
+h1 {
+    color: $h1;
+}
+h2 {
+    color: $h2;
+}

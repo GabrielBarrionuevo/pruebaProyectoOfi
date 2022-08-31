@@ -1,0 +1,29 @@
+//Elimino el scroll horizontal que genera utilizando bootstrap para el responsive. 
+body {
+    overflow-x: hidden;
+}
+.textAbout {
+    // background-color: red;
+    padding: 40px;
+}
+.imagenAbout {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+}
+.imagenContact {
+    width: 100%;
+    // height: 600px;
+    object-fit: cover;
+}
+.divAbout,
+.divContact {
+    margin: 20px auto;
+}
+
+.areaPrincipal__videos {
+    padding: auto;
+}
+form {
+    padding: 40px;
+}

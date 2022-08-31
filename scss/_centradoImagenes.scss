@@ -1,0 +1,40 @@
+/* Posicionamiento */
+.areaEncabezado {
+    background-image: url("../img/Index-encabezado.jpg");
+    background-position: 50% 35%;
+}
+/* Consideré utilizar id's y no clases porque el centrado de cada una de ellas depende de la imagen particular y del criterio estétito que uno tiene a la hora de intentar centrar o priorizar una zona de la imagen en concreto. Pienso que no es algo general de todas ellas y no algo automatizado el decir, por ejemplo: "corro a la derecha un 20% todas estas imágenes del index", sino que se ajustó una por una. */
+/* Index 1 y 3 */
+/* Categorias Yunga 1*/
+/* Estepa Patagónica 2 */
+#imagenCentradaManualmente01,
+#imagenCentradaManualmente02,
+#imagenCentradaManualmente05,
+#imagenCentradaManualmente10,
+#imagenCentradaManualmente13 {
+    object-position: 90% 20%;
+}
+/* Caracteristicas Miradas2 */
+/* Categorias Bosque Busantartico 2 */
+/* About us 2 */
+#imagenCentradaManualmente03,
+#imagenCentradaManualmente09, 
+#imagenCentradaManualmente11 {
+    object-position: 90% 10%;
+}
+/* Caracteristicas Picos2 */
+/* Categorias Matorrales del Monte 2*/
+/* Categorias Llanura Bonaerense 1*/
+#imagenCentradaManualmente04, 
+#imagenCentradaManualmente06,
+#imagenCentradaManualmente07 {
+    object-position: 20%;
+}
+/* Categorias Ribera Platense 2*/
+#imagenCentradaManualmente08 {
+    object-position: 40%;
+}
+  /* Categorias Chaco 2 */
+#imagenCentradaManualmente12 {
+    object-position: 30%;
+}
