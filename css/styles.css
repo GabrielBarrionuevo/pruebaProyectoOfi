@@ -307,7 +307,8 @@ footer {
   width: 100%;
 }
 
-.enlacesRedesSociales, .areaEncabezado {
+.enlacesRedesSociales, 
+.areaEncabezado {
   list-style: none;
   /* Con este le saco el espacio a los enlaces, para centrar mejor el "hecho por Gabo..." */
   width: 65%;
@@ -534,6 +535,10 @@ footer {
 .tituloContact:before {
   content: "Contact Us";
 }
+
+/* FOOTER */
+
+
 
 /* ========================= */
 /* MEDIA QUERIES */
