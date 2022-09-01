@@ -296,7 +296,7 @@ main {
 
 .textoCentrado {
   color: #3d3b8e;
-  font-size: 3em;
+  font-size: 4vw;
 }
 
 /* ================================ */
@@ -610,6 +610,11 @@ footer {
   .container-fluid {
     margin-top: 4%;
   }
+  /* MAIN */
+  .textoCentrado {
+    font-size: 6vw;
+  }
+
   /* FOOTER */
   .footer {
     display: flex;
